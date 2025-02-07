@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Refilwe's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body Styling */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      background-color: #e5d3b3; /* Nude Beige */
+      color: #333;
+      padding: 60px 20px;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      font-weight: 600;
+    }
+
+    .hero-content p {
+      font-size: 1.25rem;
+      margin-top: 10px;
+    }
+
+    /* Projects Section */
+    .projects {
+      padding: 40px 20px;
+      text-align: center;
+      background-color: #fff;
+    }
+
+    .projects h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #4b4b4b;
+      font-weight: 600;
+    }
+
+    .project-cards {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .project-card {
+      background-color: #f7f2e7; /* Light Beige */
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px;
+      width: 280px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .project-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #a68c67; /* Darker Beige */
+    }
+
+    .project-card p {
+      font-size: 1rem;
+      color: #777;
+    }
+
+    /* Reviews Section */
+    .reviews {
+      padding: 40px 20px;
+      text-align: center;
+      background-color: #e5d3b3;
+    }
+
+    .reviews h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .review-cards {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .review-card {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      width: 280px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 20px;
+      animation: fadeInUp 2s ease-in-out;
+    }
+
+    .review-card p {
+      font-size: 1.1rem;
+      color: #4b4b4b;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #f7f2e7;
+      text-align: center;
+      padding: 20px;
+      color: #a68c67;
+      font-size: 1rem;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero-section">
+    <div class="hero-content">
+      <h1>Refilwe's Portfolio</h1>
+      <p>Welcome to my professional portfolio. Let's build something amazing together.</p>
+    </div>
+  </header>
+
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="project-cards">
+      <div class="project-card">
+        <h3>Project 1: Cloud Automation</h3>
+        <p>An automation system deployed on AWS using Terraform, Docker, and Kubernetes.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project 2: Static Website with S3</h3>
+        <p>Deployed a static portfolio website using AWS S3 with Terraform for infrastructure management.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project 3: Cloud Security Solution</h3>
+        <p>Implemented a cloud security solution with AWS IAM, policies, and role-based access controls.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="reviews">
+    <h2>What People Are Saying</h2>
+    <div class="review-cards">
+      <div class="review-card">
+        <p>"Refilwe is an outstanding professional. The cloud security solution exceeded our expectations." – Client A</p>
+      </div>
+      <div class="review-card">
+        <p>"The project delivery was impeccable. Would definitely work with Refilwe again!" – Client B</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Refilwe's Portfolio | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
+
