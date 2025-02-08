@@ -26,3 +26,7 @@ The setup and configuration of the AWS S3 bucket and static hosting were guided 
 
 ## Future Enhancements:
 - Custom domain support with Route 53.
+
+## Screenshot
+Running Website
+![running website](https://github.com/user-attachments/assets/dc6175f2-a50b-4f60-b42c-64e4aaaacd50)
